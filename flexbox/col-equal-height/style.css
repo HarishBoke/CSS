@@ -1,0 +1,26 @@
+.row.is-flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.row.is-flex > [class*='col-'] {
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f0f0;
+  padding:10px;
+  border: 1px solid #ccc;
+}
+
+.is-flex .box {
+  background: none;
+  position: static;
+}
+
+.is-flex [class*="col-"] {
+  background: #fff;
+}
+
+@media (max-width: 768px) {
+    .row.is-flex > [class*='col-'] {
+        width: 100%;
+    }
+}
