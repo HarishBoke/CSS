@@ -1,0 +1,57 @@
+<!Doctype HTML>
+<html>
+        <head>
+            <title>Flex layout for KPI</title>
+            <style>
+                *{
+                    margin: 0;
+                    padding: 0;
+                    box-sizing: border-box;
+                }
+                .container-kpi { 
+                    display: flex;
+                    flex-direction: row;
+                    height: 100vh;
+                    flex-wrap: wrap;
+                } 
+                .container-kpi > div {
+                    font-size: 5vw;
+                    padding: .5em;
+                    color: white;
+                    /* margin: 10px; */
+                    border-radius: 3px;
+                    background: orange;
+                    border: 5px solid black;
+                }
+                .container-kpi > div:nth-child(1),
+                .container-kpi > div:nth-child(2){
+                    width: 50%;
+                }
+                /* .container-kpi > div:nth-child(odd) {
+                    width: 25%;
+                }
+                .container-kpi > div:nth-child(even) {
+                    width: 20%;
+                } */
+                
+                .container-kpi > div:nth-child(3),
+                .container-kpi > div:nth-child(4){
+                   width: 25%;
+                }
+            
+            </style>
+        </head>
+        <body>
+            <!-- The layout should be auto adjustable based on JSON input. with flat UI hierarchy  -->
+                <div id="sym-KPI" class="container-kpi">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                    <div></div>       
+                </div>
+            
+            <script>
+                
+            </script>
+        </body>
+</html>
