@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg">
+    <g>
+    <rect fill="orange" height="200" width="100%" x="0" y="0" />
+        <g>
+            <rect fill="#fff" height="200" width="100%"  x="0" y="200"></rect>
+            <circle stroke="blue" fill="blue" cy="300" cx="50%" r="80" /> 
+            <!-- <line stroke="blue" x1="50%" y1="55%" x2="50%" y2="33%"/>                       
+            <line stroke="blue" x1="46%" y1="44%" x2="54%" y2="44%"/>                       -->
+
+        </g>
+    <rect fill="green" height="200" width="100%" x="0" y="400" />
+    
+    </g>
+</svg>
