@@ -17,7 +17,11 @@
         </style>
     </head>
     <body>
+                <h1>
+                                SVG graphical element
+                        </h1>
         <div class="container">
+                
             <div>
                     <h4>Sunrise</h4>
                     <svg id="sunrise" height="100" width="300" style="border:1px solid #ccc" viewbox="0,0,600,100" preserveaspectratio="xMinYMid slice">
@@ -72,8 +76,33 @@
             <div>
                         <h4>Path</h4>
                         <svg id="path" height="300" width="300" style="border:1px solid #ccc">
-                                <path  d="240,20,290,150,240,280,60,280,10,150,60,20" stroke-width="3" stroke="#000" fill="none" />
-                            </svg>
+                                        <path d="M 20 10, 20 120 M 10 30 100 30 M 10 70 100 70
+                                        M 10 110 100 110" stroke-width="3" stroke="#000" fill="none" />   
+                        </svg>
+                </div>
+                <div>
+                                <h4>Text</h4>
+                                <svg id="text" height="300" width="300" style="border:1px solid #ccc; font-family: 'Courier New', Courier, monospace;">
+                                        <rect x="0" y="80" fill="#ff742B" width="300" height="130" />
+                                        <text x="20" y="120" fill="#fff" font-size="36"> Harish SVG Text</text>
+                                    </svg>
+                </div>
+                <div>
+                                <h4>Use</h4>
+                                <svg id="use" height="300" width="300" style="border:1px solid #ccc; font-family: 'Courier New', Courier, monospace;">
+                                  <defs>
+                                          <g id="itemForReuse">
+                                                <circle cx="30" cy="30" r="30" />
+                                          </g>
+                                  </defs>     
+                               
+
+                                <!-- #1 use -->
+                                <use xlink:href="#itemForReuse" x="0" y="0" fill="#ff742B"></use>
+
+                                  <!-- #2 use -->
+                                <use xlink:href="#itemForReuse" x="100" y="100" fill="#ccc"></use>
+                        </svg>
                 </div>
 
         </div>
