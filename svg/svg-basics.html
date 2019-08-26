@@ -1,0 +1,95 @@
+<html>
+    <head>
+        <title>
+            PluralSight - SVG fundamentals
+        </title>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                text-align: center;
+
+            }
+            .container > div{ 
+                border:1px solid #000000;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <div>
+                    <h4>Sunrise</h4>
+                    <svg id="sunrise" height="100" width="300" style="border:1px solid #ccc" viewbox="0,0,600,100" preserveaspectratio="xMinYMid slice">
+                                <circle  cx="150" cy="50" r="50" fill="#f00" />
+                            <ellipse cx="150" cy="150" rx="150" ry="100" />
+                    </svg>
+            
+            </div>
+            <div>
+                    <h4>Circle</h4>
+                    <svg id="circle" height="300" width="300" style="border:1px solid #ccc">
+                            <circle cx="150" cy="150" r="60" />
+                    </svg>
+            </div>
+            <div>
+                    <h4>ellipse</h4>
+                    <svg id="ellipse" height="300" width="300" style="border:1px solid #ccc">
+                            <ellipse cx="150" cy="150" rx="150" ry="100" />
+                    </svg>
+            </div>
+            <div>
+                    <h4>Sequare</h4>
+                    <svg id="Sequare" height="300" width="300" style="border:1px solid #ccc" viewbox="0,0,300,300" preserveAspectRation="none">
+                            <rect width="200" height="200" x="0" y="0"  />
+                    </svg>
+            </div>
+            <div>
+                    <h4>Sequare with radius</h4>
+                    <svg id="radiusSequare" height="300" width="300" style="border:1px solid #ccc">
+                            <rect width="300" height="200" x="0" y="0" rx="15" ry="15" />
+                    </svg>            
+            </div>
+            <div>
+                    <h4>Line</h4>
+                    <svg id="line" height="300" width="300" style="border:1px solid #ccc">
+                        <line x1="20" y1="200" x2="280" y2="100" stroke-width="3" stroke="#000" />
+                    </svg>
+            </div>
+            <div>
+                    <h4>PolyLine </h4>
+                    <svg id="polyline" height="300" width="300" style="border:1px solid #ccc">
+                        <!-- <polyline points="20,200,80,50,160,150,200,90,280,160" stroke-width="3" stroke="#000" /> -->
+                        <polyline points="20,200,80,50,160,150,200,90,280,160" stroke-width="3" stroke="#000" fill="none" />
+                    </svg>
+            </div>
+            <div>
+                    <h4>Polygon</h4>
+                    <svg id="polygon" height="300" width="300" style="border:1px solid #ccc">
+                                <polygon points="240,20,290,150,240,280,60,280,10,150,60,20" stroke-width="3" stroke="#000" fill="none" />
+                        </svg>
+            </div>
+            <div>
+                        <h4>Path</h4>
+                        <svg id="path" height="300" width="300" style="border:1px solid #ccc">
+                                <path  d="240,20,290,150,240,280,60,280,10,150,60,20" stroke-width="3" stroke="#000" fill="none" />
+                            </svg>
+                </div>
+
+        </div>
+            
+       
+        
+    
+        
+
+       
+
+       
+       
+
+        
+
+        <!-- viewbox doubles canvas in current case and each element is half by thr canvas size and same to the svg side -->
+    </body>
+</html>
