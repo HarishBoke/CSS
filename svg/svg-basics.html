@@ -220,10 +220,50 @@
                                                </rect>
                                         </svg>   
                                 </div>
-                
+                                <div>
+                                                <h4>
+                                                        set
+                                                </h4>
+                                                <p>
+                                                        sets value of an attribute for specific duration
+                                                </p>
+                                                <svg width="300" height="300">
+                                                       <circle cx="100" cy="100" r="30">
+                                                        <set attributeName="r"
+                                                        to="100"
+                                                        begin="1s"
+                                                        feel="freeze" />
+                                                       </circle>
+                                                </svg>   
+                                        </div>
                 </div>
-                
          </section>
+         <section>
+                        <h1>
+                                Styling SVG with CSS
+                        </h1>
+                        <div class="container">
+                                <div>
+                                        <h4>
+                                                SVG - CSS
+                                        </h4>
+                                        <!-- 
+                                                exernal- should be above svg tag and looks like
+                                                - <?xml-stylesheet type=“text/css” href=“stylesheet.css” ?>
+                                         -->
+                                         <!-- 
+                                                 internal / embbeded :
+                                                 <style>CSS HERE</style>
+                                          -->
+                                          <!-- 
+                                                  can be inline like HTML
+                                           -->
+                                        <svg width="300" height="300">
+
+                                        </svg>
+                                </div>
+                        </div>
+        </section>
         
         <!-- viewbox doubles canvas in current case and each element is half by thr canvas size and same to the svg side -->
     </body>
