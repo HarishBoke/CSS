@@ -1,0 +1,152 @@
+<!Doctype HTML>
+<html>
+    <head>
+        <title>
+            Sunrise - SVG First animation attempt
+        </title>
+        <style>
+            * {
+                padding:0;
+                margin:0;
+            }
+            body {
+                /* background: skyblue;  */
+                -webkit-animation: day ease-out 5s;
+                animation: day ease-out 5s;
+                /*background: #ff7800;   */
+                background: rgb(0, 174, 255);
+            }
+            svg {
+                width: 100vw;
+                height: 100vh;   
+            }
+            /* @-webkit-keyframes sunrise{
+                0% {
+
+                }
+                50% {
+
+                }
+                100% {
+
+                }
+            }
+            @-moz-keyframes sunrise{
+                0% {
+
+                }
+                50% {
+
+                }
+                100% {
+                    
+                }
+            } */
+            @keyframes sunrise{
+                0% {
+                    fill: orangered;
+                    /* cx: 30%; */
+                    cy: 35%;
+                    r: 55;
+                }
+                25% {
+                    fill: orange;
+                    cy: 25%;
+                    r: 50;
+                }
+                50% {
+                    fill: yellowgreen;
+                    /* cx: 30%; */
+                    cy: 20%;
+                    r: 45;
+                }
+                77% {
+                    cy:15%;
+                }
+                100% {
+                    fill: yellow;
+                    /* cx: 30%; */
+                    cy: 10%;
+                    r: 30;
+                }
+            }
+            @keyframes day{
+                0% {
+                    background: #ff7800;
+                }
+                25% {
+                    background: rgb(255, 208, 0);
+                }
+                50% {
+                    background: rgb(50, 192, 205);
+                }
+                100% {
+                    background: rgb(0, 174, 255);
+                }
+            }
+            @keyframes mountain{
+                0% {
+                    fill: #8d310a;
+                }
+                25% {
+                    background: #b43c08;
+                }
+                50% {
+                    background: #d4480c;
+                }
+                100% {
+                    background: #e65518;
+                }
+            }
+
+            .mountain {
+                fill: #a7390a;
+                -webkit-animation: mountain ease-in 5s;
+                animation: mountain ease-in 5s;
+
+            }
+            .sun {
+                fill: yellow;
+                -webkit-animation: sunrise ease-out 5s;
+                animation: sunrise ease-out 5s;
+                cx: 42%;
+                cy: 10%;
+                r: 30;
+                stroke-opacity:0.2;
+                stroke-width: 8;
+                stroke-miterlimit: 10%;
+
+                stroke: #000
+
+            }
+            #lake {
+                width: 100%;
+                height: 300px;
+                y: 70%;
+            }
+        </style>
+    </head>
+    <body>
+        <svg>
+                     <g>
+                        <circle  class="sun"></circle>
+                        <ellipse cx="12%" cy="90vh" rx="40%" ry="35%" class="mountain"></ellipse>
+                        <ellipse cx="80%" cy="90vh" rx="39%" ry="50%" class="mountain"></ellipse>
+                        <!-- <ellipse cx="90%" cy="90vh" rx="30%" ry="60%" class="mountain"></ellipse> -->
+
+                        <path d="M -100 400 Q 150 50 200 300 Q 250 450 300 300 Q 350 50 400 300 C 450 550 450 50 500 300 C 550 150 550 550 600 300 A 50 50 0 1 1 800 2350" fill="#a7390a" />
+                        <defs>
+                                <linearGradient id="linearGradient" x1="0" x2="1" y1="0" y2="1">
+                                        <stop offset="0%" stop-color="#e69548" />
+                                        <stop offset="25%" stop-color="#b38e7a" />
+                                        <stop offset="50%" stop-color="#8b8b97" />
+                                        <stop offset="100%" stop-color="#5588b5" />
+                                </linearGradient>
+                        </defs>
+                        <!-- use above gradient -->
+                        <rect fill="url(#linearGradient)" x="0" y="0" id="lake" />
+                    
+                    </g>
+        </svg>
+    </body>
+</html>
