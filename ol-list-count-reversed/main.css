@@ -1,0 +1,10 @@
+.wrapper {
+    display:flex;
+  }
+  
+  body {
+    padding: 30px;
+  }
+  .container {
+    min-width: 300px
+  }
